@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "rootDir": "src",
+    "paths": {
+      "@/*": ["src/*"],
+      "components/*": ["src/components/*"],
+      "pages/*": ["src/pages/*"],
+      "utils/*": ["src/utils/*"],
+      "static/*": ["src/static/*"],
+      "iconfont/*": ["src/static/iconfont/*"],
+      "store/*": ["src/store/*"],
+      "router/*": ["src/router/*"],
+      "reducers/*": ["src/redux/reducers/*"],
+      "public/*": ["public/*"],
+    }
+  }
+}
