@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { IonContent, IonPage } from '@ionic/react'
 import { Redirect } from 'react-router-dom'
 import GlobalMap from 'components/GlobalMap'
+import Heatmap from 'components/Heatmap'
 import { connect } from 'store/connect'
 import styles from './style.less'
 
@@ -20,6 +21,7 @@ const HomePage: React.FC<StateProps> = ({isAuth}) => {
     <IonPage id="home-page">
       <IonContent>
         <GlobalMap/>
+        <Heatmap/>
       </IonContent>
     </IonPage>
     : <Redirect to="/login" />

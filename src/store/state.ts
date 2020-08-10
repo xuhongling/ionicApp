@@ -1,6 +1,7 @@
 import { combineReducers } from './combineReducers'
 import { authorReducer } from './author/author.reducer'
 import { globalMapReducer } from './globalMap/globalMap.reducer'
+import { AMapFnReducer } from './AMapFn/AMapFn.reducer'
 import { userReducer } from './user/user.reducer'
 
 export const initialState: AppState = {
@@ -9,6 +10,9 @@ export const initialState: AppState = {
 	},
 	globalMap: {
 		globalMap: null
+	},
+	AMapFn: {
+		AMapFn: null
 	},
   user: {
     loading: false,
@@ -20,6 +24,7 @@ export const initialState: AppState = {
 export const reducers = combineReducers({
 	author: authorReducer,
 	globalMap: globalMapReducer,
+	AMapFn: AMapFnReducer,
   user: userReducer
 });
 
